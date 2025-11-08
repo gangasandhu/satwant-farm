@@ -3,14 +3,18 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { Image } from "lucide-react";
+import LoadingSpinner from "./LoadingSpinner";
 
 export default function PhotoGrid({ photos = [] }) {
   const [index, setIndex] = useState(-1);
 
+  if(!photos)
+    return <LoadingSpinner />
+
   return (
     <section className="container mx-auto px-4 md:px-8 lg:px-12 py-10">
       <div className="columns-2 sm:columns-3 lg:columns-4 gap-4 [column-fill:_balance]">
-        {photos.map((p, i) => (
+        {photos?.length > 0 ? photos.map((p, i) => (
           <figure
             key={p.id}
             className="relative group mb-4 break-inside-avoid overflow-hidden rounded-xl bg-base-200 cursor-pointer"
@@ -36,18 +40,16 @@ export default function PhotoGrid({ photos = [] }) {
               </figcaption>
             )}
           </figure>
-        ))}
+        )) : 
+        <div className="w-full">No photos Added</div>}
       </div>
 
       {/* Lightbox modal */}
       <Lightbox
         open={index >= 0}
         close={() => setIndex(-1)}
-        slides={photos.map((p) => ({ src: p.src, description: p.alt }))}
         index={index}
-        on={{
-          view: ({ index }) => setIndex(index),
-        }}
+        slides={photos.map((p) => ({ src: p.src, description: p.alt }))}
       />
     </section>
   );

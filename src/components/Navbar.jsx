@@ -20,7 +20,7 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className="flex gap-6">
-                    <a href="satwant@webflow.io" className="hover:text-white">info@webflow.io</a>
+                    <a href="brar_satwant@yahoo.in" className="hover:text-white">brar_satwant@yahoo.in</a>
                     <span>+91 99929 63966</span>
                 </div>
             </div>

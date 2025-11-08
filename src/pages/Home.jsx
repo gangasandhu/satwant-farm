@@ -5,6 +5,7 @@ import QualityControl from "../components/Features/QualityControl"
 import Products from "../components/Features/Products"
 import Socials from "../components/Socials"
 import Footer from "../components/Footer"
+import { useEffect } from "react"
 
 export default function Home() {
 

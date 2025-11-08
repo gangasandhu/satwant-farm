@@ -16,11 +16,11 @@ export default function Socials() {
                 </p>
                 <div className="mb-8 flex flex-col sm:flex-row items-center justify-center gap-4 p-2 bg-base-200">
                     <a
-                        href="mailto:info@webflow.io"
+                        href="mailto:brar_satwant@yahoo.in"
                         className="flex items-center gap-2 text-primary hover:text-primary-focus transition-all"
                     >
                         <Mail className="w-5 h-5" />
-                        <span className="font-medium">info@webflow.io</span>
+                        <span className="font-medium">brar_satwant@yahoo.in</span>
                     </a>
 
                     <div className="divider divider-horizontal sm:divider-vertical"></div>

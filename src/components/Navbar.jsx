@@ -36,10 +36,8 @@ const Navbar = () => {
                 <div className="hidden md:flex ">
                     <ul className="menu menu-horizontal gap-2">
                         <li><a className="font-semibold text-lime-300">Home</a></li>
-                        <li><a>Our Farm</a></li>
-                        <li><a>Our Dairy</a></li>
-                        <li><a>Contact Us</a></li>
-                        <li><a>Photos <span className="text-lime-300">+</span></a></li>
+                        <li><Link to="/farm">Our Farm</Link></li>
+                        <li><Link to="/dairy">Our Dairy</Link></li>
                     </ul>
                 </div>
                 <div className="lg:hidden">
@@ -52,10 +50,8 @@ const Navbar = () => {
                 <div className="md:hidden px-6 pb-4 text-white/95">
                     <ul className="menu bg-black/90 rounded w-full">
                         <li><a className="font-semibold text-lime-300">Home</a></li>
-                        <li><a>Our Farm</a></li>
-                        <li><a>Our Dairy</a></li>
-                        <li><a>Contact Us</a></li>
-                        <li><a>Photos <span className="text-lime-300">+</span></a></li>
+                        <li><Link to="/farm">Our Farm</Link></li>
+                        <li><Link to="/dairy">Our Dairy</Link></li>
                     </ul>
                 </div>
             )}

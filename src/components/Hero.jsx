@@ -34,10 +34,6 @@ const Hero = () => {
                         Dairy Photos
                     </Link>
                 </div>
-                <div className="flex md:hidden gap-6 mt-4 p-4 justify-center">
-                    <a href="satwant@webflow.io" className="hover:text-white">info@webflow.io</a>
-                    <span>+91 99929 63966</span>
-                </div>
             </div>
         </section>
     )

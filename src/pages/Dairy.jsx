@@ -4,6 +4,7 @@ import Navbar2 from "../components/Navbar2";
 import DairyHero from "../components/dairy/DairyHero";
 import PhotoGrid from "../components/PhotoGrid";
 import AddPhotos from "../components/AddPhotos";
+import AdminAccess from '../components/AdminAccess'
 import { db } from "../lib/firebaseClient";
 import { collection, query, where, orderBy, onSnapshot } from "firebase/firestore";
 
@@ -29,7 +30,7 @@ const Dairy = () => {
     <div data-theme="light">
       <Navbar2 />
       <DairyHero />
-      <AddPhotos page="dairy" folder="dairy" />
+      <AdminAccess page="dairy" folder="dairy" />
       <h1 className="text-center text-3xl font-bold p-4 m-4">Dairy Gallery</h1>
       <PhotoGrid photos={photos} />
     </div>

@@ -14,7 +14,7 @@ export default function PhotoGrid({ photos = [] }) {
   return (
     <section className="container mx-auto px-4 md:px-8 lg:px-12 py-10">
       <div className="columns-2 sm:columns-3 lg:columns-4 gap-4 [column-fill:_balance]">
-        {photos?.length > 0 ? photos.map((p, i) => (
+        {photos && photos.length > 0 ? photos.map((p, i) => (
           <figure
             key={p.id}
             className="relative group mb-4 break-inside-avoid overflow-hidden rounded-xl bg-base-200 cursor-pointer"

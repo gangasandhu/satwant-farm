@@ -6,6 +6,7 @@ import PhotoGrid from "../components/PhotoGrid";
 import AddPhotos from "../components/AddPhotos";
 import { db } from "../lib/firebaseClient";
 import { collection, query, where, orderBy, onSnapshot } from "firebase/firestore";
+import AdminAccess from "../components/AdminAccess";
 
 const Farm = () => {
   const [photos, setPhotos] = useState([]);
@@ -29,7 +30,8 @@ const Farm = () => {
     <div data-theme="light">
       <Navbar2 />
       <FarmHero />
-      <AddPhotos page="farm" folder="farm" />
+      <AdminAccess page="farm" folder="farm" />
+      {/* <AddPhotos page="farm" folder="farm" /> */}
       <h1 className="text-center text-3xl font-bold p-4 m-4">Farm Gallery</h1>
       <PhotoGrid photos={photos} />
     </div>

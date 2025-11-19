@@ -22,7 +22,6 @@ const Farm = () => {
     );
     const unsub = onSnapshot(q, (snap) => {
       const list = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-      console.log({ list })
       setPhotos(list);
       // optional: cache for faster repeat visits
       localStorage.setItem("farmPhotos", JSON.stringify(list));

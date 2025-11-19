@@ -34,7 +34,7 @@ export default function Socials() {
                 <div className="flex justify-center gap-6 flex-wrap">
                     {/* YouTube */}
                     <a
-                        href="https://www.youtube.com/@travelwithsatwantbrar9796"
+                        href="https://www.youtube.com/@farmersatwant"
                         target="_blank"
                         rel="noreferrer"
                         className="btn bg-red-500 hover:bg-red-600 text-white text-lg px-6 rounded-lg"
@@ -52,7 +52,7 @@ export default function Socials() {
 
                     {/* Facebook */}
                     <a
-                        href="https://www.facebook.com/"
+                        href="https://www.facebook.com/satwant.brar.393"
                         target="_blank"
                         rel="noreferrer"
                         className="btn btn-outline border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-white rounded-lg"
@@ -65,7 +65,7 @@ export default function Socials() {
 
                     {/* Instagram */}
                     <a
-                        href="https://www.instagram.com/"
+                        href="https://www.instagram.com/brar_satwant99/"
                         target="_blank"
                         rel="noreferrer"
                         className="btn btn-outline border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white rounded-lg"

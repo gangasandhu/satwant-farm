@@ -9,7 +9,7 @@ import { db } from "../lib/firebaseClient";
 import { collection, query, where, orderBy, onSnapshot } from "firebase/firestore";
 
 const Dairy = () => {
-  const [photos, setPhotos] = useState([]);
+  const [photos, setPhotos] = useState(null);
 
   // realtime Firestore listener (shared gallery for everyone)
   useEffect(() => {
@@ -30,9 +30,10 @@ const Dairy = () => {
     <div data-theme="light">
       <Navbar2 />
       <DairyHero />
-      <AdminAccess page="dairy" folder="dairy" />
       <h1 className="text-center text-3xl font-bold p-4 m-4">Dairy Gallery</h1>
       <PhotoGrid photos={photos} />
+      <AdminAccess page="dairy" folder="dairy" />
+
     </div>
   );
 };

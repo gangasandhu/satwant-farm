@@ -10,7 +10,7 @@ export default function AboutUs() {
             <p className="text-amber-500 italic mb-2 text-lg">about us</p>
 
             <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-base-content">
-              Years Of Heritage
+              Satwant Brar
             </h2>
 
             <p className="mt-5 text-base md:text-lg text-base-content/70 max-w-prose">

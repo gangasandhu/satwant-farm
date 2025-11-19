@@ -8,7 +8,7 @@ const Navbar2 = () => {
     <header className="absolute inset-x-0 top-0 z-20 text-white">
 
       {/* 🌾 Main navbar */}
-      <div className="navbar px-6 lg:px-12 bg-base-100/10 backdrop-blur-md">
+      <div className="navbar px-6 lg:px-12 bg-base-100/10">
         <div className="flex-1">
           <Link
             to="/"
@@ -45,7 +45,7 @@ const Navbar2 = () => {
 
       {/* 📱 Mobile dropdown */}
       {open && (
-        <div className="md:hidden bg-black/70 backdrop-blur-sm border-t border-base-content/20">
+        <div className="md:hidden bg-black/70 border-t border-base-content/20">
           <ul className="menu p-4 text-base font-medium">
             <li>
               <Link to="/" className="text-lime-300 font-semibold">Home</Link>

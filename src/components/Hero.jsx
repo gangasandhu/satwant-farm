@@ -20,16 +20,16 @@ const Hero = () => {
                 <p className="mt-5 text-base sm:text-lg md:text-xl text-white/90">
                     Simple Farming. Honest Food.
                 </p>
-                <p className="mt-5 text-base sm:text-lg md:text-xl text-white/90">
+                <p className="mt-5 text-base hidden md:block sm:text-lg md:text-xl text-white/90">
                     We grow what we eat — wheat, paddy, fruits, and fresh vegetables from our family farm and care for our cows to provide pure, fresh milk every day.
                 </p>
 
                 <div className="mt-8 flex gap-2 justify-center">
-                    <Link to="/farm" className="btn btn-lg rounded-full bg-lime-400 border-none text-emerald-900 hover:bg-lime-300">
+                    <Link to="/farm" className="btn md:btn-lg rounded-full bg-lime-400 border-none text-emerald-900 hover:bg-lime-300">
                         <Images />
                         Farm Photos
                     </Link>
-                    <Link to="/dairy" className="btn btn-lg rounded-full bg-emerald-400 border-none text-emerald-900 hover:bg-emerald-300">
+                    <Link to="/dairy" className="btn md:btn-lg rounded-full bg-emerald-400 border-none text-emerald-900 hover:bg-emerald-300">
                         <Images />
                         Dairy Photos
                     </Link>
